@@ -1,0 +1,30 @@
+.adSlideContent {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.adSlideContent img {
+  width: 45%;
+  height: 15rem;
+  object-fit: cover;
+}
+.adTextBox h1 {
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+}
+.adTextBox {
+  padding: 1.5rem;
+}
+.adTextBox p {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 600px) {
+  .adTextBox p {
+    font-size: 1.35rem;
+  }
+}

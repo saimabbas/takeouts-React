@@ -1,0 +1,73 @@
+.storesContentBox {
+  margin: 0 0 5rem 0;
+}
+.storeControl {
+  border-bottom: 1px solid var(--dark);
+  padding: 0 0 0.75rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 2.5rem 0;
+}
+.storeControl h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--tl);
+}
+.storeControl div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.storeControl div a {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--tl);
+  margin: 0 1.5rem 0 0;
+}
+.storesSlider{
+  padding: 0 0 1.5rem 0;
+}
+.leftRightButtonStores {
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  background-color: var(--lorg);
+  border-radius: 50%;
+  color: var(--org);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.5s;
+  z-index: 15;
+  box-shadow: 0 2px 4px lightgray;
+  margin: 0 0 0 0.75rem;
+}
+.leftRightButtonStores:hover {
+  box-shadow: 0 2px 8px lightgray;
+}
+.storeGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 2.5rem;
+}
+@media screen and (max-width: 1000px) {
+  .storeGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 600px) {
+  .storeGrid {
+    grid-template-columns: 1fr;
+  }
+  .storeControl div a {
+    font-size: 1.35rem;
+  }
+  .storeControl h1 {
+    font-size: 1.75rem;
+    width: 55%;
+  }
+}

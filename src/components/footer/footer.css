@@ -1,0 +1,116 @@
+.footer {
+  background-color: var(--blue);
+  padding: 2.5rem 0;
+}
+.footerTop {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 5rem;
+  width: 100%;
+}
+.footerTop div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footerTop h1 {
+  color: var(--bgc);
+  opacity: 0.75;
+  font-size: 2.25rem;
+  font-weight: 400;
+  margin: 0 0 2.5rem 0;
+}
+.footerTop a {
+  font-size: 1.65rem;
+  color: var(--bgc);
+  margin: 0 0 1.25rem 0;
+  display: flex;
+  align-items: center;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+.footerTop a svg {
+  margin: 0 0.75rem 0 0;
+}
+.footerTop a:hover {
+  opacity: 1;
+}
+.footerBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 2.5rem 0 0 0;
+  padding: 2.5rem 0 0 0;
+  border-top: 1px solid var(--tl);
+}
+.footerBottom p {
+  font-size: 1.65rem;
+  color: var(--bgc);
+  display: flex;
+  align-items: center;
+}
+.footerBottom p span {
+  opacity: 0.5;
+}
+.span {
+  margin: 0 1rem;
+}
+
+.footerBottom p a {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+.footerBottom p a:hover {
+  opacity: 1;
+}
+.downloadApps svg {
+  width: 50%;
+  background-color: var(--tl);
+  border-radius: 0.5rem;
+  margin: 0 0 1.5rem 0;
+  padding: 0.5rem;
+  transition: 0.5s;
+}
+.downloadApps svg:hover {
+  background-color: var(--org);
+}
+.downloadApps a {
+  width: 100%;
+}
+@media screen and (max-width: 1000px) {
+  .footerTop {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.5rem;
+  }
+  .downloadApps svg {
+    width: 75%;
+  }
+  .footerTop h1 {
+    font-size: 1.75rem;
+    margin: 0 0 1.5rem 0;
+  }
+  .footerTop a {
+    font-size: 1.35rem;
+    margin: 0 0 1rem 0;
+  }
+  .footerBottom {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footerBottom p {
+    font-size: 1.35rem;
+  }
+  .footerBottom p:nth-child(2) {
+    margin: 1.5rem 0 0 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footerTop {
+    grid-template-columns: 1fr 1fr;
+  }
+  .downloadApps svg {
+    width: 100%;
+  }
+}

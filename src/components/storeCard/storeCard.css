@@ -1,0 +1,103 @@
+.storeCard {
+  background-color: #fff;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 1s;
+}
+.storeCard:hover {
+  box-shadow: 0 5px 10px var(--light);
+}
+.storeCardTop {
+  width: 100%;
+  height: 22.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 1.5rem 1.5rem 0 0;
+  position: relative;
+}
+.storeCardTop img {
+  width: 100%;
+  height: 22.5rem;
+  object-fit: cover;
+  transition: 0.75s;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+.storeCardTop:hover > img {
+  transform: scale(1.05);
+}
+.storeCardTop div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height: 100%; */
+  z-index: 15;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.5rem 0 0 0;
+}
+.storeCardTop div span {
+  background-color: var(--org);
+  color: var(--bgc);
+  font-size: 1.15rem;
+  padding: 0.25rem 1.5rem;
+  margin: 0.75rem 0 0 0;
+  border-radius: 0 1000px 1000px 0;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border: 1px solid var(--white);
+  border-left: 0;
+}
+.storeCardBottom {
+  padding: 1.5rem;
+}
+.storeCardBottom h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--tl);
+}
+.storeCardBottom h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--dark);
+}
+.storeCardBottom div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+.storeCardBottom div span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.storeCardBottom h3 {
+  font-size: 1.5rem;
+  color: var(--dark);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+.storeCardBottom h3 svg {
+  margin: 0 0.5rem 0 0;
+}
+.storeCardBottom h4 {
+  font-size: 1.5rem;
+  color: var(--dark);
+  font-weight: 500;
+}
+.storeCardBottom img {
+  height: 2rem;
+  margin: 0 0.5rem;
+}
+.storeCardBottom span {
+  color: var(--org);
+  font-size: 1.5rem;
+  display: flex;
+}

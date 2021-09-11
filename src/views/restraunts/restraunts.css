@@ -1,0 +1,59 @@
+.restraunts {
+    position: relative;
+  }
+  
+  .leftRightButtonAll {
+    min-width: 2.75rem;
+    min-height: 2.75rem;
+    background-color: var(--lorg);
+    border-radius: 50%;
+    color: var(--org);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.5s;
+    z-index: 15;
+    box-shadow: 0 0 5px var(--dark);
+  }
+  .leftRightButtonAll:hover {
+    box-shadow: 0 0 10px var(--dark);
+  }
+  .showMoreBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0;
+  }
+  .showMoreBtn button {
+    padding: 1.25rem 2.5rem;
+    font-size: 1.5rem;
+    background-color: var(--light);
+    color: var(--tl);
+    transition: 0.5s;
+    border-radius: 0.5rem;
+  }
+  .showMoreBtn button:hover {
+    background-color: var(--lorg);
+    color: var(--org);
+  }
+  
+  .storeGrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 2.5rem;
+  }
+  @media screen and (max-width: 1000px) {
+    .storeGrid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .storeGrid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

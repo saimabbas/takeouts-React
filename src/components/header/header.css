@@ -1,0 +1,219 @@
+.header {
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.headerTop {
+  background-color: var(--bgc);
+  padding: 1.5rem 2.5rem;
+}
+.headerBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.headerLeft {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.deliveryPickupBox {
+  margin: 0 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+  border-radius: 10000px;
+  overflow: hidden;
+  border: 1px solid var(--tl);
+  padding: 0.35rem;
+  height: 3.75rem;
+}
+.deliveryPickupBox > input {
+  display: none;
+}
+.deliveryPickupBox label {
+  width: 7.5rem;
+  height: 2.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  border-radius: 10000px;
+  overflow: hidden;
+  cursor: pointer;
+  color: var(--tl);
+  transition: 0.25s;
+}
+.deliveryPickupBox input[type="radio"]:checked + label {
+  background-color: var(--tl);
+  color: var(--white);
+}
+.headerMenu svg {
+  font-size: 2.5rem;
+  color: var(--tl);
+  cursor: pointer;
+}
+.headerMenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.headerMenu img {
+  margin: 0 0 0 1.5rem;
+  height: 4rem;
+  object-fit: contain;
+}
+.locationP {
+  font-size: 1.5rem;
+  color: var(--tl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1.5rem 0 0;
+}
+.locationP > b {
+  font-weight: 400;
+  margin: 0 0.75rem 0 0.5rem;
+}
+.locationP > span {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  cursor: pointer;
+}
+.locationP > span > svg {
+  font-size: 2rem;
+}
+.headerLeft a {
+  font-size: 1.5rem;
+  margin: 0 0 0 2.5rem;
+  color: var(--org);
+}
+.searchBar {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  background-color: var(--white);
+  padding: 0.5rem;
+  border-radius: 1000px;
+  height: 3.75rem;
+  width: 50%;
+}
+.searchBar svg {
+  font-size: 2.5rem;
+  color: var(--org);
+  margin: 0 0.5rem;
+}
+.searchBar input {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  margin: 0 1rem 0 0;
+  font-size: 1.35rem;
+  background-color: transparent;
+  color: var(--td);
+}
+.searchBar input::placeholder {
+  color: var(--dark);
+}
+.headerRight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1 1;
+}
+.cart {
+  margin: 0 0 0 2.5rem;
+  min-width: 3.75rem;
+  min-height: 3.75rem;
+  border-radius: 50%;
+  background-color: var(--tl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: var(--bgc);
+  position: relative;
+}
+.cart span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.25rem;
+  background-color: var(--org);
+  width: 1.75rem;
+  height: 1.75rem;
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(25%, -25%);
+}
+.headerBottom {
+  width: 100%;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  display: none;
+  background-color: var(--bgc);
+}
+@media screen and (max-width: 1250px) {
+  .searchBar {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .deliveryPickupBoxMob {
+    display: none;
+  }
+  .lpMob {
+    display: none;
+  }
+  .searchBar {
+    width: 50%;
+  }
+  .headerBottom {
+    display: flex;
+  }
+}
+@media screen and (max-width: 600px) {
+  .headerBottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .headerMenu img {
+    height: 4rem;
+  }
+  .headerBottom h2 {
+    margin: 1.5rem 0 0 0;
+  }
+  .deliveryPickupBox {
+    margin: 0 2.5rem 0 0;
+  }
+  .searchBar {
+    width: 100%;
+    margin: 0 0 0 1.5rem;
+  }
+
+  .headerTop {
+    padding: 1.5rem 1.5rem;
+  }
+  .cart {
+    margin: 0 0 0 0.5rem;
+    min-width: 3.5rem;
+    min-height: 3.5rem;
+  }
+  .searchBar {
+    display: none;
+  }
+  .searchBar.searchBarMob {
+    display: flex;
+    margin: 0;
+  }
+}

@@ -1,0 +1,36 @@
+.adSliderContentBox {
+  padding: 0 0 5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.adSlider {
+  width: 100%;
+  /* margin: 0 -1.25rem !important; */
+  z-index: 10 !important;
+}
+
+
+.adSlide2 {
+    background-color: rgb(207, 236, 243);
+    color: teal;
+  }
+  .adSlide3 {
+    background-color: rgb(238, 231, 222);
+    color: var(--tl);
+  }
+  .adSlideAll {
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  .adSliderContentBox {
+    padding: 0 0 2.5rem 0;
+  }
+}
