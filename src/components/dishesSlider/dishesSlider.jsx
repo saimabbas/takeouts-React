@@ -17,7 +17,7 @@ const DishesSlider = () => {
           <Swiper
             className="dishesSlider"
             loop="true"
-            slidesPerView="3"
+            slidesPerView="3.5"
             navigation={{
               nextEl: ".dishesR",
               prevEl: ".dishesL",

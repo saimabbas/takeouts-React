@@ -1,7 +1,7 @@
 import React from "react";
 import "./storeCard.css";
-import { MdWatchLater } from "react-icons/md";
-import FreeDelivery from '../../assets/free-delivery.png'
+import { MdAccessTime } from "react-icons/md";
+import FreeDelivery from "../../assets/free-delivery.png";
 const StoreCard = (props) => {
   return (
     <div className="storeCard">
@@ -10,13 +10,15 @@ const StoreCard = (props) => {
         <div>{props.showPromoted ? <span>PROMOTED</span> : null}</div>
       </div>
       <div className="storeCardBottom">
-        <h1 className="cursiveFont">{props.restrauntName}</h1>
-        <h2>{props.description}</h2>
         <div>
+          <h1 className="cursiveFont">{props.restrauntName}</h1>
           <h3>
-            <MdWatchLater />
+            <MdAccessTime />
             {props.deliveryTime}
           </h3>
+        </div>
+        <div>
+          <h2>{props.description}</h2>
           {props.showFreeDelivery ? (
             <span>
               {/* <img src={FreeDelivery} alt="" /> */}
@@ -24,7 +26,19 @@ const StoreCard = (props) => {
             </span>
           ) : null}
         </div>
-        <span>{props.saleOfferText}</span>
+        {/* <div> */}
+        {/* <h3>
+            <MdAccessTime />
+            {props.deliveryTime}
+          </h3> */}
+        {/* {props.showFreeDelivery ? (
+            <span>
+              <img src={FreeDelivery} alt="" />
+              <h4>Free Delivery</h4>
+            </span>
+          ) : null} */}
+        {/* </div> */}
+        {props.showSaleOffer ? <span>{props.saleOfferText}</span> : null}
       </div>
     </div>
   );

@@ -10,7 +10,7 @@
 }
 .storeCardTop {
   width: 100%;
-  height: 22.5rem;
+  height: 20rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,14 +20,14 @@
 }
 .storeCardTop img {
   width: 100%;
-  height: 22.5rem;
+  height: 20rem;
   object-fit: cover;
   transition: 0.75s;
-  border-radius: 1.5rem 1.5rem 0 0;
+  border-radius: 1.25rem;
 }
-.storeCardTop:hover > img {
+/* .storeCardTop:hover > img {
   transform: scale(1.05);
-}
+} */
 .storeCardTop div {
   position: absolute;
   top: 0;
@@ -53,7 +53,7 @@
   border-left: 0;
 }
 .storeCardBottom {
-  padding: 1.5rem;
+  padding: 1rem 1.5rem 1.5rem 1.5rem;
 }
 .storeCardBottom h1 {
   font-size: 2rem;
@@ -64,18 +64,21 @@
   font-size: 1.5rem;
   font-weight: 400;
   color: var(--dark);
+  margin: 0.75rem 0 0 0;
 }
 .storeCardBottom div {
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
-  margin: 1rem 0;
+  /* margin: 1rem 0; */
 }
 .storeCardBottom div span {
   display: flex;
   align-items: center;
   justify-content: center;
+  white-space: nowrap;
+  margin: 0 0 0 0.5rem;
 }
 .storeCardBottom h3 {
   font-size: 1.5rem;
@@ -83,6 +86,8 @@
   font-weight: 500;
   display: flex;
   align-items: center;
+  white-space: nowrap;
+  margin: 0 0 0 0.5rem;
 }
 .storeCardBottom h3 svg {
   margin: 0 0.5rem 0 0;
@@ -100,4 +105,5 @@
   color: var(--org);
   font-size: 1.5rem;
   display: flex;
+  margin: 0.75rem 0 0 0;
 }

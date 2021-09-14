@@ -27,4 +27,7 @@
   .adTextBox p {
     font-size: 1.35rem;
   }
+  .adTextBox h1 {
+    font-size: 1.5rem;
+  }
 }
