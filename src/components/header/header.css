@@ -7,7 +7,7 @@
   left: 0;
 }
 .headerTop {
-  background-color: var(--bgc);
+  background-color: var(--white);
   padding: 1.5rem 2.5rem;
 }
 .headerBox {
